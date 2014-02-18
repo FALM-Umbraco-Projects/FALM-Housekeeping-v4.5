@@ -1,5 +1,5 @@
-FALM Housekeeping v4.5.0.0
-==========================
+FALM Housekeeping
+=================
 This package adds a tree node to the developer section with the following tools:
 - Umbraco logs manager: with this tool you can view and delete Umbraco log events.
 N.B.: in order to improve the performance of the log viewer, you can add SQL indexes to the coloumns DateStamp, UserId and LogHeader of umbracoLog table.
