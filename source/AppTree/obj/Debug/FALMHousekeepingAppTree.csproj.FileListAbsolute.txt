@@ -1,0 +1,5 @@
+C:\Users\Adriano\Documents\Visual Studio 2010\Projects\umb451s.viking.it\umbraco\presentation\bin\FALMHousekeepingAppTree.dll
+C:\Users\Adriano\Documents\Visual Studio 2010\Projects\umb451s.viking.it\umbraco\presentation\bin\FALMHousekeepingAppTree.pdb
+C:\Users\Adriano\Documents\Visual Studio 2010\Projects\umb451s.viking.it\extensions\FALMHousekeeping\AppTree\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Adriano\Documents\Visual Studio 2010\Projects\umb451s.viking.it\extensions\FALMHousekeeping\AppTree\obj\Debug\FALMHousekeepingAppTree.dll
+C:\Users\Adriano\Documents\Visual Studio 2010\Projects\umb451s.viking.it\extensions\FALMHousekeeping\AppTree\obj\Debug\FALMHousekeepingAppTree.pdb

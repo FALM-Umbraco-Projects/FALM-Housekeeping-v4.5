@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D372EB8-ED22-4C5F-9964-440CDC9A0F1E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FALMHousekeepingTools</RootNamespace>
+    <AssemblyName>FALMHousekeepingTools</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\umbraco\presentation\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="umbraco\FALMHousekeeping\images\logs_cleanup.gif" />
+    <Content Include="umbraco\FALMHousekeeping\images\logs_viewer.gif" />
+    <Content Include="umbraco\FALMHousekeeping\images\media_folder_cleanup.gif" />
+    <Content Include="umbraco\FALMHousekeeping\images\users_delete.gif" />
+    <Content Include="umbraco\FALMHousekeeping\images\versions_cleanup.gif" />
+    <Content Include="umbraco\FALMHousekeeping\images\versions_view.gif" />
+    <Content Include="umbraco\FALMHousekeeping\logs\cleanupLogs.aspx" />
+    <Content Include="umbraco\FALMHousekeeping\logs\showLogs.aspx" />
+    <Content Include="umbraco\FALMHousekeeping\media\cleanupMediaFS.aspx" />
+    <Content Include="umbraco\FALMHousekeeping\users\deleteUsersBySelection.aspx" />
+    <Content Include="umbraco\FALMHousekeeping\versions\cleanupVersionsByCount.aspx" />
+    <Content Include="umbraco\FALMHousekeeping\versions\cleanupVersionsByDate.aspx" />
+    <Content Include="umbraco\FALMHousekeeping\versions\showVersions.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="umbraco\FALMHousekeeping\logs\cleanupLogs.aspx.cs">
+      <DependentUpon>cleanupLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\logs\cleanupLogs.aspx.designer.cs">
+      <DependentUpon>cleanupLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\logs\showLogs.aspx.cs">
+      <DependentUpon>showLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\logs\showLogs.aspx.designer.cs">
+      <DependentUpon>showLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\media\cleanupMediaFS.aspx.cs">
+      <DependentUpon>cleanupMediaFS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\media\cleanupMediaFS.aspx.designer.cs">
+      <DependentUpon>cleanupMediaFS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\users\deleteUsersBySelection.aspx.cs">
+      <DependentUpon>deleteUsersBySelection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\users\deleteUsersBySelection.aspx.designer.cs">
+      <DependentUpon>deleteUsersBySelection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\versions\cleanupVersionsByCount.aspx.cs">
+      <DependentUpon>cleanupVersionsByCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\versions\cleanupVersionsByCount.aspx.designer.cs">
+      <DependentUpon>cleanupVersionsByCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\versions\cleanupVersionsByDate.aspx.cs">
+      <DependentUpon>cleanupVersionsByDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\versions\cleanupVersionsByDate.aspx.designer.cs">
+      <DependentUpon>cleanupVersionsByDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\versions\showVersions.aspx.cs">
+      <DependentUpon>showVersions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umbraco\FALMHousekeeping\versions\showVersions.aspx.designer.cs">
+      <DependentUpon>showVersions.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\components\umbraco.controls\umbraco.controls.csproj">
+      <Project>{6EDD2061-82F2-461B-BB6E-879245A832DE}</Project>
+      <Name>umbraco.controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\umbraco\businesslogic\umbraco.businesslogic.csproj">
+      <Project>{E469A9CE-1BEC-423F-AC44-713CD72457EA}</Project>
+      <Name>umbraco.businesslogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\umbraco\cms\umbraco.cms.csproj">
+      <Project>{CCD75EC3-63DB-4184-B49D-51C1DD337230}</Project>
+      <Name>umbraco.cms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\umbraco\datalayer\umbraco.datalayer.csproj">
+      <Project>{C7CB79F0-1C97-4B33-BFA7-00731B579AE2}</Project>
+      <Name>umbraco.datalayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56562</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)*.gif" "$(TargetDir)..\" /s /y
+xcopy "$(ProjectDir)*.aspx" "$(TargetDir)..\" /s /y
+xcopy "$(ProjectDir)*.js" "$(TargetDir)..\" /s /y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
