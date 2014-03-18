@@ -1,4 +1,4 @@
-FALM - Housekeeping
+FALM-Housekeeping
 =================
 This package adds a tree node to the developer section with the following tools:
 - Umbraco logs manager: with this tool you can view and delete Umbraco log events.
